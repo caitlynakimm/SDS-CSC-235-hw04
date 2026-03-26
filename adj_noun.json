@@ -2,562 +2,450 @@
   "nodes": [
     {
       "id": "agreeable",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "man",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "old",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "person",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "anything",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "short",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "arm",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "round",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "aunt",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "first",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "bad",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "air",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "boy",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "beautiful",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "black",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "face",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "letter",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "little",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "young",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "best",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "course",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "friend",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "love",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "part",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "room",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "thing",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "time",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "way",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "better",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "heart",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "mind",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "place",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "right",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "state",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "woman",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "word",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "door",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "eye",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "bright",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "evening",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "morning",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "certain",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "day",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "other",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "child",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "happy",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "common",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "dark",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "kind",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "night",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "dear",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "good",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "home",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "mother",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "pretty",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "open",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "early",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "fire",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "full",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "great",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "master",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "moment",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "work",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "general",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "fancy",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "voice",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "head",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "hope",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "long",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "greater",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "hand",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "hard",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "red",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "life",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "glad",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "large",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "new",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "white",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "late",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "whole",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "light",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "manner",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "bed",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "house",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "low",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "money",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "ready",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "small",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "strange",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "thought",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "lost",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "alone",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "nothing",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "miserable",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "natural",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "half",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "wrong",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "name",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "pleasant",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "possible",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "side",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "perfect",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "poor",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "quiet",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "same",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "strong",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "something",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "true",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "usual",
-      "group": 0,
       "type": "adjective"
     },
     {
       "id": "family",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "world",
-      "group": 1,
       "type": "noun"
     },
     {
       "id": "year",
-      "group": 1,
       "type": "noun"
     }
   ],
