@@ -1,10 +1,6 @@
 {
   "nodes": [
     {
-      "id": "agreeable",
-      "type": "adjective"
-    },
-    {
       "id": "man",
       "type": "noun"
     },
@@ -17,24 +13,12 @@
       "type": "noun"
     },
     {
-      "id": "anything",
-      "type": "noun"
-    },
-    {
       "id": "short",
       "type": "adjective"
     },
     {
-      "id": "arm",
-      "type": "noun"
-    },
-    {
       "id": "round",
       "type": "adjective"
-    },
-    {
-      "id": "aunt",
-      "type": "noun"
     },
     {
       "id": "first",
@@ -65,10 +49,6 @@
       "type": "noun"
     },
     {
-      "id": "letter",
-      "type": "noun"
-    },
-    {
       "id": "little",
       "type": "adjective"
     },
@@ -79,10 +59,6 @@
     {
       "id": "best",
       "type": "adjective"
-    },
-    {
-      "id": "course",
-      "type": "noun"
     },
     {
       "id": "friend",
@@ -161,10 +137,6 @@
       "type": "noun"
     },
     {
-      "id": "morning",
-      "type": "noun"
-    },
-    {
       "id": "certain",
       "type": "adjective"
     },
@@ -221,22 +193,6 @@
       "type": "adjective"
     },
     {
-      "id": "open",
-      "type": "adjective"
-    },
-    {
-      "id": "early",
-      "type": "adjective"
-    },
-    {
-      "id": "fire",
-      "type": "noun"
-    },
-    {
-      "id": "full",
-      "type": "adjective"
-    },
-    {
       "id": "great",
       "type": "adjective"
     },
@@ -249,15 +205,7 @@
       "type": "noun"
     },
     {
-      "id": "work",
-      "type": "noun"
-    },
-    {
       "id": "general",
-      "type": "adjective"
-    },
-    {
-      "id": "fancy",
       "type": "adjective"
     },
     {
@@ -277,10 +225,6 @@
       "type": "adjective"
     },
     {
-      "id": "greater",
-      "type": "adjective"
-    },
-    {
       "id": "hand",
       "type": "noun"
     },
@@ -295,10 +239,6 @@
     {
       "id": "life",
       "type": "noun"
-    },
-    {
-      "id": "glad",
-      "type": "adjective"
     },
     {
       "id": "large",
@@ -361,14 +301,6 @@
       "type": "noun"
     },
     {
-      "id": "lost",
-      "type": "adjective"
-    },
-    {
-      "id": "alone",
-      "type": "adjective"
-    },
-    {
       "id": "nothing",
       "type": "noun"
     },
@@ -377,32 +309,12 @@
       "type": "adjective"
     },
     {
-      "id": "natural",
-      "type": "adjective"
-    },
-    {
-      "id": "half",
-      "type": "noun"
-    },
-    {
-      "id": "wrong",
-      "type": "adjective"
-    },
-    {
-      "id": "name",
-      "type": "noun"
-    },
-    {
       "id": "pleasant",
       "type": "adjective"
     },
     {
       "id": "possible",
       "type": "adjective"
-    },
-    {
-      "id": "side",
-      "type": "noun"
     },
     {
       "id": "perfect",
@@ -429,37 +341,11 @@
       "type": "noun"
     },
     {
-      "id": "true",
-      "type": "adjective"
-    },
-    {
       "id": "usual",
       "type": "adjective"
-    },
-    {
-      "id": "family",
-      "type": "noun"
-    },
-    {
-      "id": "world",
-      "type": "noun"
-    },
-    {
-      "id": "year",
-      "type": "noun"
     }
   ],
   "links": [
-    {
-      "source": "man",
-      "target": "agreeable",
-      "value": 1
-    },
-    {
-      "source": "old",
-      "target": "agreeable",
-      "value": 1
-    },
     {
       "source": "old",
       "target": "man",
@@ -467,27 +353,7 @@
     },
     {
       "source": "person",
-      "target": "agreeable",
-      "value": 1
-    },
-    {
-      "source": "person",
       "target": "old",
-      "value": 1
-    },
-    {
-      "source": "short",
-      "target": "anything",
-      "value": 1
-    },
-    {
-      "source": "arm",
-      "target": "short",
-      "value": 1
-    },
-    {
-      "source": "round",
-      "target": "arm",
       "value": 1
     },
     {
@@ -503,11 +369,6 @@
     {
       "source": "first",
       "target": "person",
-      "value": 1
-    },
-    {
-      "source": "first",
-      "target": "aunt",
       "value": 1
     },
     {
@@ -558,16 +419,6 @@
     {
       "source": "face",
       "target": "beautiful",
-      "value": 1
-    },
-    {
-      "source": "letter",
-      "target": "beautiful",
-      "value": 1
-    },
-    {
-      "source": "letter",
-      "target": "black",
       "value": 1
     },
     {
@@ -638,11 +489,6 @@
     {
       "source": "best",
       "target": "man",
-      "value": 1
-    },
-    {
-      "source": "course",
-      "target": "best",
       "value": 1
     },
     {
@@ -837,11 +683,6 @@
     },
     {
       "source": "right",
-      "target": "arm",
-      "value": 1
-    },
-    {
-      "source": "right",
       "target": "face",
       "value": 1
     },
@@ -966,21 +807,6 @@
       "value": 1
     },
     {
-      "source": "morning",
-      "target": "first",
-      "value": 1
-    },
-    {
-      "source": "morning",
-      "target": "air",
-      "value": 1
-    },
-    {
-      "source": "morning",
-      "target": "bright",
-      "value": 1
-    },
-    {
       "source": "certain",
       "target": "man",
       "value": 1
@@ -1053,11 +879,6 @@
     {
       "source": "other",
       "target": "young",
-      "value": 1
-    },
-    {
-      "source": "other",
-      "target": "course",
       "value": 1
     },
     {
@@ -1267,11 +1088,6 @@
     },
     {
       "source": "good",
-      "target": "arm",
-      "value": 1
-    },
-    {
-      "source": "good",
       "target": "round",
       "value": 1
     },
@@ -1352,11 +1168,6 @@
     },
     {
       "source": "home",
-      "target": "arm",
-      "value": 1
-    },
-    {
-      "source": "home",
       "target": "little",
       "value": 1
     },
@@ -1431,56 +1242,6 @@
       "value": 1
     },
     {
-      "source": "open",
-      "target": "arm",
-      "value": 1
-    },
-    {
-      "source": "open",
-      "target": "door",
-      "value": 1
-    },
-    {
-      "source": "early",
-      "target": "time",
-      "value": 1
-    },
-    {
-      "source": "early",
-      "target": "morning",
-      "value": 1
-    },
-    {
-      "source": "early",
-      "target": "day",
-      "value": 1
-    },
-    {
-      "source": "early",
-      "target": "home",
-      "value": 1
-    },
-    {
-      "source": "fire",
-      "target": "eye",
-      "value": 1
-    },
-    {
-      "source": "fire",
-      "target": "good",
-      "value": 1
-    },
-    {
-      "source": "full",
-      "target": "heart",
-      "value": 1
-    },
-    {
-      "source": "full",
-      "target": "eye",
-      "value": 1
-    },
-    {
       "source": "great",
       "target": "first",
       "value": 1
@@ -1536,11 +1297,6 @@
       "value": 1
     },
     {
-      "source": "work",
-      "target": "first",
-      "value": 1
-    },
-    {
       "source": "general",
       "target": "air",
       "value": 1
@@ -1553,11 +1309,6 @@
     {
       "source": "general",
       "target": "other",
-      "value": 1
-    },
-    {
-      "source": "fancy",
-      "target": "general",
       "value": 1
     },
     {
@@ -1612,11 +1363,6 @@
     },
     {
       "source": "long",
-      "target": "letter",
-      "value": 1
-    },
-    {
-      "source": "long",
       "target": "room",
       "value": 1
     },
@@ -1646,16 +1392,6 @@
       "value": 1
     },
     {
-      "source": "greater",
-      "target": "air",
-      "value": 1
-    },
-    {
-      "source": "greater",
-      "target": "part",
-      "value": 1
-    },
-    {
       "source": "hand",
       "target": "round",
       "value": 1
@@ -1678,11 +1414,6 @@
     {
       "source": "hand",
       "target": "pretty",
-      "value": 1
-    },
-    {
-      "source": "hand",
-      "target": "open",
       "value": 1
     },
     {
@@ -1713,11 +1444,6 @@
     {
       "source": "hard",
       "target": "master",
-      "value": 1
-    },
-    {
-      "source": "hard",
-      "target": "work",
       "value": 1
     },
     {
@@ -1771,11 +1497,6 @@
       "value": 1
     },
     {
-      "source": "glad",
-      "target": "heart",
-      "value": 1
-    },
-    {
       "source": "large",
       "target": "round",
       "value": 1
@@ -1793,11 +1514,6 @@
     {
       "source": "large",
       "target": "pretty",
-      "value": 1
-    },
-    {
-      "source": "large",
-      "target": "fire",
       "value": 1
     },
     {
@@ -1888,11 +1604,6 @@
     {
       "source": "whole",
       "target": "face",
-      "value": 1
-    },
-    {
-      "source": "whole",
-      "target": "course",
       "value": 1
     },
     {
@@ -2122,11 +1833,6 @@
     },
     {
       "source": "thought",
-      "target": "anything",
-      "value": 1
-    },
-    {
-      "source": "thought",
       "target": "first",
       "value": 1
     },
@@ -2143,16 +1849,6 @@
     {
       "source": "thought",
       "target": "mother",
-      "value": 1
-    },
-    {
-      "source": "lost",
-      "target": "day",
-      "value": 1
-    },
-    {
-      "source": "alone",
-      "target": "man",
       "value": 1
     },
     {
@@ -2183,41 +1879,6 @@
     {
       "source": "miserable",
       "target": "little",
-      "value": 1
-    },
-    {
-      "source": "natural",
-      "target": "course",
-      "value": 1
-    },
-    {
-      "source": "natural",
-      "target": "love",
-      "value": 1
-    },
-    {
-      "source": "natural",
-      "target": "manner",
-      "value": 1
-    },
-    {
-      "source": "half",
-      "target": "nothing",
-      "value": 1
-    },
-    {
-      "source": "wrong",
-      "target": "way",
-      "value": 1
-    },
-    {
-      "source": "wrong",
-      "target": "nothing",
-      "value": 1
-    },
-    {
-      "source": "name",
-      "target": "old",
       "value": 1
     },
     {
@@ -2253,16 +1914,6 @@
     {
       "source": "possible",
       "target": "thought",
-      "value": 1
-    },
-    {
-      "source": "side",
-      "target": "right",
-      "value": 1
-    },
-    {
-      "source": "side",
-      "target": "other",
       "value": 1
     },
     {
@@ -2521,26 +2172,6 @@
       "value": 1
     },
     {
-      "source": "something",
-      "target": "wrong",
-      "value": 1
-    },
-    {
-      "source": "true",
-      "target": "state",
-      "value": 1
-    },
-    {
-      "source": "true",
-      "target": "woman",
-      "value": 1
-    },
-    {
-      "source": "usual",
-      "target": "course",
-      "value": 1
-    },
-    {
       "source": "usual",
       "target": "room",
       "value": 1
@@ -2553,26 +2184,6 @@
     {
       "source": "usual",
       "target": "strong",
-      "value": 1
-    },
-    {
-      "source": "family",
-      "target": "whole",
-      "value": 1
-    },
-    {
-      "source": "world",
-      "target": "whole",
-      "value": 1
-    },
-    {
-      "source": "world",
-      "target": "side",
-      "value": 1
-    },
-    {
-      "source": "year",
-      "target": "old",
       "value": 1
     }
   ]

@@ -10,3 +10,7 @@ body {
 #landing {
 	text-align: center;
 }
+
+#frame {
+	float: left;
+}
