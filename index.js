@@ -3,6 +3,7 @@ d3.json("adj_noun.json")
         console.log(data); 
     }); 
 
+// creates graph in force-directed layout
 d3.json("adj_noun.json").then(function (data) {
     const width = 700;
     const height = 700;
@@ -35,7 +36,51 @@ d3.json("adj_noun.json").then(function (data) {
         .attr("r", 8)
         .attr("fill", d => color(d.type))
         .attr("stroke", "#000")
-        .call(drag(simulation)); //makes nodes draggable
+        .call(drag(simulation)) //makes nodes draggable
+        .on('click', (event, d) => {
+            console.log("Term clicked:", d.id, "\nType:", d.type);
+
+            let nounCount = 0;
+            let adjCount = 0;
+
+            const connectedLinks = data.links.filter( link =>
+                link.source.id === d.id || link.target.id === d.id
+            );
+
+            connectedLinks.forEach(link => {
+                const neighbor = link.source.id === d.id ? link.target : link.source;
+                neighbor.type === "noun" ? nounCount++ : adjCount++;
+            });
+
+            console.log("Noun count:", nounCount,"Adjective count:", adjCount);
+
+            let margin = 50;
+            let width = 500;
+            let height = 500;
+
+            d3.select("#barChart").html("<h1>Frequency of Related Nouns and Adjectives for Selected Term</h1>");
+
+            let svg = d3.select("#barChart")
+                        .append("svg")
+                            .attr("width", (width + margin*2))
+                            .attr("height", (height + margin*2))
+                        .append("g")
+                            .attr("transform", `translate(${margin}, ${margin})`);
+            
+            let xAxis = d3.scaleBand()
+                            .domain(data.type)
+                            .range([margin, width-margin]);
+            xAxis.paddingInner(0.15);
+
+            let yAxis = d3.scaleLinear()
+              .domain([0, d3.max(nounCount, adjCount)] + 1)
+              .range([height - margin, margin]);
+
+            var colorPalette = d3.scaleOrdinal()
+                .domain(data.type)
+                .range(d3.schemeCategory10);
+
+        });
 
     const label = svg.append("g")
         .selectAll("text")
@@ -83,3 +128,30 @@ d3.json("adj_noun.json").then(function (data) {
     }
 
 });
+
+
+//identify which node is clicked
+//find all its links where it is either in the source or target
+//iterate
+    //identify the term that is not the selected node
+    //access that node and determine its type
+    //update bar height counter var
+//create visual
+
+// //create a bar graph after selecting a node
+// async function drawVis(data) {
+//     let margin = 50;
+//     let width = 500;
+//     let height = 500;
+
+//     d3.select("#frame").html("<h1>Frequency of Related Nouns and Adjectives for Selected Term</h1>");
+
+//     let svg = d3.select("#frame")
+//                 .append("svg")
+//                     .attr("width", (width + margin*2))
+//                     .attr("height", (height + margin*2))
+//                 .append("g")
+//                     .attr("transform", `translate(${margin}, ${margin})`);
+    
+//     let xAxis = d3.
+// }
