@@ -8,9 +8,11 @@ d3.json("adj_noun.json").then(function (data) {
     const width = 700;
     const height = 700;
 
-    const color = d3.scaleOrdinal(d3.schemeTableau10);
+    var color = d3.scaleOrdinal()
+        .domain(["noun", "adjective"])
+        .range(["red", "blue"]);
 
-    const svg = d3.select("#frame")
+    const svg = d3.select("#networkFrame")
         .append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -58,28 +60,62 @@ d3.json("adj_noun.json").then(function (data) {
             let width = 500;
             let height = 500;
 
-            d3.select("#barChart").html("<h1>Frequency of Related Nouns and Adjectives for Selected Term</h1>");
+            d3.select("#barChart").html("<h2>Frequency of Related Nouns and Adjectives for Selected Term</h2>");
 
-            let svg = d3.select("#barChart")
+            const barData = [
+                {type: "noun", count: nounCount},
+                {type: "adjective", count: adjCount}
+            ];
+
+            let barSvg = d3.select("#barChart")
                         .append("svg")
-                            .attr("width", (width + margin*2))
-                            .attr("height", (height + margin*2))
+                        .attr("width", (width + margin*2))
+                        .attr("height", (height + margin*2))
                         .append("g")
                             .attr("transform", `translate(${margin}, ${margin})`);
-            
+
             let xAxis = d3.scaleBand()
-                            .domain(data.type)
-                            .range([margin, width-margin]);
-            xAxis.paddingInner(0.15);
+                            .domain(barData.map(d => d.type))
+                            .range([0, width])
+                            .padding(0.2);
+
+            barSvg.append("g")
+                .attr("transform", `translate(0, ${height})`)
+                .call(d3.axisBottom(xAxis));
+
+            barSvg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width/2)
+                .attr("y", height + margin /2 + 10)
+                .text("Type of Term");
 
             let yAxis = d3.scaleLinear()
-              .domain([0, d3.max(nounCount, adjCount)] + 1)
-              .range([height - margin, margin]);
+              .domain([0, d3.max(barData, d => d.count)])
+              .range([height, 0]);
+
+            barSvg.append("g")
+                .call(d3.axisLeft(yAxis));
+
+            barSvg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -margin + 20)
+                .attr("x", -height / 2)
+                .text("Number of Connections");            
 
             var colorPalette = d3.scaleOrdinal()
-                .domain(data.type)
-                .range(d3.schemeCategory10);
+                .domain(["noun", "adjective"])
+                .range(["red", "blue"]);
 
+            barSvg.append("g")
+                .selectAll("rect")
+                .data(barData)
+                .join("rect")
+                    .attr("x", d => { return xAxis(d.type); })
+                    .attr("y", d => { return yAxis(d.count); })
+                    .attr("width", xAxis.bandwidth()) //.bandwidth() determines what the bars' widths should be
+                    .attr("height", d => height - yAxis(d.count))
+                    .style("fill", d => colorPalette(d.type));
         });
 
     const label = svg.append("g")
@@ -128,30 +164,6 @@ d3.json("adj_noun.json").then(function (data) {
     }
 
 });
-
-
-//identify which node is clicked
-//find all its links where it is either in the source or target
-//iterate
-    //identify the term that is not the selected node
-    //access that node and determine its type
-    //update bar height counter var
-//create visual
-
-// //create a bar graph after selecting a node
-// async function drawVis(data) {
-//     let margin = 50;
-//     let width = 500;
-//     let height = 500;
-
-//     d3.select("#frame").html("<h1>Frequency of Related Nouns and Adjectives for Selected Term</h1>");
-
-//     let svg = d3.select("#frame")
-//                 .append("svg")
-//                     .attr("width", (width + margin*2))
-//                     .attr("height", (height + margin*2))
-//                 .append("g")
-//                     .attr("transform", `translate(${margin}, ${margin})`);
     
 //     let xAxis = d3.
 // }
