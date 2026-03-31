@@ -1,10 +1,10 @@
 #website where dataset was found
-
 https://websites.umich.edu/~mejn/netdata/#:~:text=Zachary's%20karate%20club:%20Les%20Miserables:%20coappearance.%20Word,*%20Dolphin%20social%20network:%20*%20Political%20blogs:
 
 
 #forced-directed graph layout example programs
-
 https://observablehq.com/@d3/force-directed-graph/2
 https://observablehq.com/@d3/force-directed-graph-component
-https://d3js.org/d3-force
+
+#d3.js code help
+https://www.reddit.com/r/d3js/comments/f315q5/how_to_completely_destroy_an_svg_chart/
