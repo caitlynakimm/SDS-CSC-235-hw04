@@ -5,8 +5,8 @@ d3.json("adj_noun.json")
 
 // creates graph in force-directed layout
 d3.json("adj_noun.json").then(function (data) {
-    const width = 700;
-    const height = 700;
+    const width = 600;
+    const height = 600;
 
     var color = d3.scaleOrdinal()
         .domain(["noun", "adjective"])
@@ -20,13 +20,13 @@ d3.json("adj_noun.json").then(function (data) {
 
     const simulation = d3.forceSimulation(data.nodes)
         .force("link", d3.forceLink(data.links).id(d => d.id).distance(80)) //connects edges to nodes, set edge lengths to be 60 pixels
-        .force("charge", d3.forceManyBody().strength(-200)) //repels nodes by strength of 100
+        .force("charge", d3.forceManyBody().strength(-300)) //repels nodes by strength of 100
         .force("center", d3.forceCenter(width/2, height/2)) //positions graph into center of svg
         .force("collision", d3.forceCollide(10)); //makes nodes bump into each other
 
     const link = svg.append("g")
-        .attr("stroke", "#878181ff")
-        .attr("stroke-opacity", 0.6)
+        .attr("stroke", "#7d7777ff")
+        .attr("stroke-opacity", 0.5)
         .selectAll("line")
         .data(data.links)
         .join("line");
@@ -40,6 +40,8 @@ d3.json("adj_noun.json").then(function (data) {
         .attr("stroke", "#000")
         .call(drag(simulation)) //makes nodes draggable
         .on('click', (event, d) => {
+            d3.select("#barChart").selectAll('*').remove();
+
             console.log("Term clicked:", d.id, "\nType:", d.type);
 
             let nounCount = 0;
@@ -56,11 +58,9 @@ d3.json("adj_noun.json").then(function (data) {
 
             console.log("Noun count:", nounCount,"Adjective count:", adjCount);
 
-            let margin = 50;
+            let margin = 80;
             let width = 500;
             let height = 500;
-
-            d3.select("#barChart").html("<h2>Frequency of Related Nouns and Adjectives for Selected Term</h2>");
 
             const barData = [
                 {type: "noun", count: nounCount},
@@ -74,6 +74,13 @@ d3.json("adj_noun.json").then(function (data) {
                         .append("g")
                             .attr("transform", `translate(${margin}, ${margin})`);
 
+            barSvg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width/2)
+                .attr("y", - margin / 2)
+                .attr("font-size", 20)
+                .text(`Frequency of Related Nouns and Adjectives for "${d.id}"`);
+
             let xAxis = d3.scaleBand()
                             .domain(barData.map(d => d.type))
                             .range([0, width])
@@ -81,7 +88,9 @@ d3.json("adj_noun.json").then(function (data) {
 
             barSvg.append("g")
                 .attr("transform", `translate(0, ${height})`)
-                .call(d3.axisBottom(xAxis));
+                .call(d3.axisBottom(xAxis))
+                .selectAll("text")
+                .attr("font-size", 15);
 
             barSvg.append("text")
                 .attr("text-anchor", "middle")
@@ -94,12 +103,17 @@ d3.json("adj_noun.json").then(function (data) {
               .range([height, 0]);
 
             barSvg.append("g")
-                .call(d3.axisLeft(yAxis));
+                .call(d3.axisLeft(yAxis)
+                    .tickFormat(d3.format("d"))
+                    .ticks(d3.max(barData, d => d.count))
+                )
+                .selectAll("text")
+                .attr("font-size", 15);
 
             barSvg.append("text")
                 .attr("text-anchor", "middle")
                 .attr("transform", "rotate(-90)")
-                .attr("y", -margin + 20)
+                .attr("y", -margin + 25)
                 .attr("x", -height / 2)
                 .text("Number of Connections");            
 
@@ -123,8 +137,8 @@ d3.json("adj_noun.json").then(function (data) {
         .data(data.nodes)
         .join("text")
         .text(d => d.id)
-        .attr("font-size", 10)
-        .attr("dx", -8)
+        .attr("font-size", 14)
+        .attr("dx", -10)
         .attr("dy", -10) //dx and dy - positions label relative to node's center
         .attr("fill", "#000")
         .style("pointer-events", "none"); //interactions on labels are ignored
@@ -164,6 +178,3 @@ d3.json("adj_noun.json").then(function (data) {
     }
 
 });
-    
-//     let xAxis = d3.
-// }
