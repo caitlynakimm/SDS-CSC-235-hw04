@@ -2,6 +2,11 @@ body {
 	font-family: Arial;
 }
 
+p {
+	margin-bottom: 5px;
+}
+
+
 .important {
 	font-weight: bold;
 	color: purple;
