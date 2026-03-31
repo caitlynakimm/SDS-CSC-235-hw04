@@ -26,7 +26,7 @@ _**YES**_ 3 pts: At least two different types of interaction
 
 _**YES**_ 3 pts: Meaningfully supports network analysis, geospatial analysis, visualizing uncertainty, or real-time bias mitigation  
 
-__ 1 pt: Sketch 
+_**YES**_ 1 pt: Sketch 
 
 _**YES**_ 2 pts: Two specific analysis tasks for testing
 
@@ -40,9 +40,9 @@ _**YES**_ 1 pt: CSS is in an external file, not coded directly in the `.html` fi
 
 _**YES**_ 1 pt: JS is in an external file, not coded directly in the `.html` file
 
-__ 1 pt: Completed `rubric.md` included with submission
+_**YES**_ 1 pt: Completed `rubric.md` included with submission
 
-__ 1 pt: Browser compiles code with no errors 
+_**YES**_ 1 pt: Browser compiles code with no errors 
 
 _**YES**_ 1 pt: Interactive components execute fully and consistently with no errors
 
