@@ -96,7 +96,7 @@ d3.json("adj_noun.json").then(function (data) {
                 .attr("text-anchor", "middle")
                 .attr("x", width/2)
                 .attr("y", height + margin /2 + 10)
-                .text("Type of Term");
+                .text("Type of Word");
 
             let yAxis = d3.scaleLinear()
               .domain([0, d3.max(barData, d => d.count)])
@@ -115,7 +115,7 @@ d3.json("adj_noun.json").then(function (data) {
                 .attr("transform", "rotate(-90)")
                 .attr("y", -margin + 25)
                 .attr("x", -height / 2)
-                .text("Number of Connections");            
+                .text("Number of Related Words");            
 
             var colorPalette = d3.scaleOrdinal()
                 .domain(["noun", "adjective"])
