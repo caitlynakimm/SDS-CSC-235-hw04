@@ -1,9 +1,12 @@
 #Analysis Tasks
-1.
-2.
+1. Identify any cliches or isolated terms in the network graph.
+2. Find the most popular/connected term in the network graph.
 
 #User Testing Notes
-Friend asked:
+Participant: Hayley Ma
+- Played around with the network graph, enjoyed dragging the nodes around to change the network's shape and look at the number of edges
+- Liked clicking on the nodes to see their 
+- Suggested to look at a subset of the terms (e.g. top 10 terms) since there are too many nodes and edges (dense graph)
 
 #Reasonable Adjustment in Response to Testing
-Chosen adjustment made:
+Chosen adjustment made: reduced my dataset to focus on the top 15 most common nouns and top 15 most common adjectives from the novel
