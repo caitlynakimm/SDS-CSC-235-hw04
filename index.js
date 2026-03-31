@@ -10,7 +10,7 @@ d3.json("adj_noun.json").then(function (data) {
 
     var color = d3.scaleOrdinal()
         .domain(["noun", "adjective"])
-        .range(["red", "blue"]);
+        .range(["blue", "red"]);
 
     const svg = d3.select("#networkFrame")
         .append("svg")
@@ -119,7 +119,7 @@ d3.json("adj_noun.json").then(function (data) {
 
             var colorPalette = d3.scaleOrdinal()
                 .domain(["noun", "adjective"])
-                .range(["red", "blue"]);
+                .range(["blue", "red"]);
 
             barSvg.append("g")
                 .selectAll("rect")
