@@ -5,12 +5,29 @@ body {
 .important {
 	font-weight: bold;
 	color: purple;
+	margin: 0;
+	padding: 5px 0;
 }
 
 #landing {
 	text-align: center;
 }
 
-#frame {
-	float: left;
+#visuals {
+	display: flex;
+	gap: 70px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#networkFrame circle {
+	cursor: pointer;
+}
+
+#link {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	background-color: rgb(255, 183, 129);
 }
