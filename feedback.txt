@@ -3,7 +3,7 @@
 2. Find the most popular/connected word in the network graph.
 
 #User Testing Notes
-Participant: Hayley Ma
+- Participant: Hayley Ma
 - Played around with the network graph, enjoyed dragging the words around to change the network's shape and look at the number of edges/connections
 - Liked clicking on the words to see how many nouns and adjectives are associated with the selected word
 - Noticed adjectives were on the outskirts of the network and nouns were more clustered in the center
