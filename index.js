@@ -18,6 +18,13 @@ d3.json("adj_noun.json").then(function (data) {
         .attr("height", height)
         .style("border", "1px solid #000");
 
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("x", width/2)
+        .attr("y", 25)
+        .attr("font-size", 20)
+        .text("Network Graph of Nouns and Adjectives");
+
     const simulation = d3.forceSimulation(data.nodes)
         .force("link", d3.forceLink(data.links).id(d => d.id).distance(80)) //connects edges to nodes, set edge lengths to be 60 pixels
         .force("charge", d3.forceManyBody().strength(-300)) //repels nodes by strength of 100
