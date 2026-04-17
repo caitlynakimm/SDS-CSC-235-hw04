@@ -7,6 +7,10 @@ p {
 	margin-bottom: 5px;
 }
 
+li {
+	margin-bottom: 10px;
+}
+
 #problemSpace {
 	border: 1px solid black;
 	background-color: rgb(154, 214, 238);
@@ -69,6 +73,7 @@ p {
 #networkTitle {
 	text-align: center;
 	font-family: Arial;
+	font-weight: bold;
 	font-size: 20px;
 	margin: 0 0 5px 0;
 }
@@ -76,6 +81,7 @@ p {
 #barTitle {
 	text-align: center;
 	font-family: Arial;
+	font-weight: bold;
 	font-size: 20px;
 	margin: 0 0 5px 0;
 }
