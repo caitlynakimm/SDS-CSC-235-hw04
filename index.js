@@ -5,29 +5,21 @@ d3.json("adj_noun.json")
 
 // creates graph in force-directed layout
 d3.json("adj_noun.json").then(function (data) {
-    const width = 600;
-    const height = 600;
+    const width = 570;
+    const height = 520;
 
     var color = d3.scaleOrdinal()
         .domain(["noun", "adjective"])
         .range(["blue", "red"]);
 
-    const svg = d3.select("#networkFrame")
+    const svg = d3.select("#networkGraphContainer")
         .append("svg")
         .attr("width", width)
-        .attr("height", height)
-        .style("border", "1px solid #000");
-
-    svg.append("text")
-        .attr("text-anchor", "middle")
-        .attr("x", width/2)
-        .attr("y", 25)
-        .attr("font-size", 20)
-        .text("Network Graph of Nouns and Adjectives");
+        .attr("height", height);
 
     const simulation = d3.forceSimulation(data.nodes)
-        .force("link", d3.forceLink(data.links).id(d => d.id).distance(80)) //connects edges to nodes, set edge lengths to be 60 pixels
-        .force("charge", d3.forceManyBody().strength(-300)) //repels nodes by strength of 100
+        .force("link", d3.forceLink(data.links).id(d => d.id).distance(60)) //connects edges to nodes, set edge lengths to be 60 pixels
+        .force("charge", d3.forceManyBody().strength(-250)) //repels nodes by strength of 250
         .force("center", d3.forceCenter(width/2, height/2)) //positions graph into center of svg
         .force("collision", d3.forceCollide(10)); //makes nodes bump into each other
 
@@ -47,7 +39,7 @@ d3.json("adj_noun.json").then(function (data) {
         .attr("stroke", "#000")
         .call(drag(simulation)) //makes nodes draggable
         .on('click', (event, d) => {
-            d3.select("#barChart").selectAll('*').remove();
+            d3.select("#barChart").selectAll("svg").remove();
 
             console.log("Term clicked:", d.id, "\nType:", d.type);
 
@@ -66,8 +58,8 @@ d3.json("adj_noun.json").then(function (data) {
             console.log("Noun count:", nounCount,"Adjective count:", adjCount);
 
             let margin = 80;
-            let width = 500;
-            let height = 500;
+            let width = 470;
+            let height = 420;
 
             const barData = [
                 {type: "noun", count: nounCount},
@@ -81,11 +73,7 @@ d3.json("adj_noun.json").then(function (data) {
                         .append("g")
                             .attr("transform", `translate(${margin}, ${margin})`);
 
-            barSvg.append("text")
-                .attr("text-anchor", "middle")
-                .attr("x", width/2)
-                .attr("y", - margin / 2)
-                .attr("font-size", 20)
+            d3.select('#barTitle')
                 .text(`Frequency of Related Nouns and Adjectives for "${d.id}"`);
 
             let xAxis = d3.scaleBand()

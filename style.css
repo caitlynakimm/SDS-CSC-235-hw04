@@ -6,6 +6,66 @@ p {
 	margin-bottom: 5px;
 }
 
+#problemSpace {
+	display: flex;
+	justify-content: center;
+}
+
+#legend {
+	border: 1px solid black;
+	width: fit-content;
+	margin-top: 230px;
+	padding: 10px 10px 10px 10px;
+}
+
+#legendTitle {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.legendItem {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 5px;
+}
+
+.dot {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.line {
+	width: 20px;
+	height: 2px;
+}
+
+#nounDot {
+	background-color: blue;
+}
+
+#adjDot {
+	background-color: red;
+}
+
+#linkDot {
+	background-color: #7d7777ff;
+}
+
+#networkTitle {
+	text-align: center;
+	font-size: 20px;
+	margin: 0 0 5px 0;
+}
+
+#barTitle {
+	text-align: center;
+	font-size: 20px;
+	margin: 0 0 5px 0;
+}
 
 .important {
 	font-weight: bold;
@@ -23,6 +83,11 @@ p {
 	gap: 70px;
 	align-items: flex-start;
 	justify-content: center;
+}
+
+#networkFrame {
+	display: flex;
+	align-items: flex-start;
 }
 
 #networkFrame circle {
