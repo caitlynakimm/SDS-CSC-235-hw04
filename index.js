@@ -57,9 +57,9 @@ d3.json("adj_noun.json").then(function (data) {
 
             console.log("Noun count:", nounCount,"Adjective count:", adjCount);
 
-            let margin = 80;
+            let margin = 50;
             let width = 470;
-            let height = 420;
+            let height = 350;
 
             const barData = [
                 {type: "noun", count: nounCount},
@@ -90,7 +90,7 @@ d3.json("adj_noun.json").then(function (data) {
             barSvg.append("text")
                 .attr("text-anchor", "middle")
                 .attr("x", width/2)
-                .attr("y", height + margin /2 + 10)
+                .attr("y", height + margin /2 + 12)
                 .text("Type of Word");
 
             let yAxis = d3.scaleLinear()
@@ -108,7 +108,7 @@ d3.json("adj_noun.json").then(function (data) {
             barSvg.append("text")
                 .attr("text-anchor", "middle")
                 .attr("transform", "rotate(-90)")
-                .attr("y", -margin + 25)
+                .attr("y", -margin + 12)
                 .attr("x", -height / 2)
                 .text("Number of Related Words");            
 

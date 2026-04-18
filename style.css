@@ -1,5 +1,6 @@
 body {
 	font-family: Arial;
+	margin: 0;
 }
 
 p {
@@ -27,7 +28,7 @@ li {
 
 #legend {
 	border: 1px solid black;
-	width: fit-content;
+	width: 200px;
 	margin-top: 230px;
 	padding: 10px 10px 10px 10px;
 }
@@ -68,6 +69,7 @@ li {
 
 #linkDot {
 	background-color: #7d7777ff;
+	opacity: 0.7;
 }
 
 #networkTitle {
@@ -87,6 +89,7 @@ li {
 }
 
 .important {
+	font-size: 27px;
 	font-weight: bold;
 	color: purple;
 	margin: 0;
@@ -95,6 +98,7 @@ li {
 
 #landing {
 	text-align: center;
+	margin-top: 5px;
 }
 
 #visuals {
@@ -114,9 +118,7 @@ li {
 }
 
 #link {
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	padding: 10px;
 	background-color: rgb(255, 183, 129);
+	width: fit-content;
 }

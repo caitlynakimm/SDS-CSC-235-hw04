@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <br>
     <div id="landing">
         <h1 class="important">Network Analysis of the Top 15 Most Common Nouns and Adjectives</h1>
         <h1 class="important">in Charles Dicken's Novel <i>David Copperfield</i></h1>
@@ -20,9 +19,9 @@
     <div id="problemSpace">
         <ul id="probleDesp"> 
             <li>This tool analyzes Charles Dickens's writing style in his novel <i>David Copperfield</i> by examining the relationships between the 15 most common nouns and the 15 most common adjectives in the story.</li>
-            <li>Each node represents a word, and each link represents the two words appearing in the same sentence.</li>
-            <li><b>Drag</b> nodes to change the network's structure and uncover cliques or patterns in Dickens's writing, such as which nouns and adjectives tend to cluster together. </li>
-            <li><b>Click</b> a node to see a breakdown of how many nouns and adjectives that word is connected to revealing which type of term is most frequently paired with it throughout the novel.</li>
+            <li>Each <b>node</b> represents a word, and each <b>edge</b> represents the two words appearing in the same sentence.</li>
+            <li><b>Drag</b> nodes to change the network's structure and uncover cliques or patterns in Dickens's writing, such as which nouns and adjectives tend to be paired together. </li>
+            <li><b>Click</b> a node to see a breakdown of how many nouns and adjectives that word is connected to, revealing which type of term is more frequently paired with it.</li>
         </ul>
     </div>
 
@@ -34,7 +33,7 @@
                 <strong id="legendTitle"> Key </strong>
                 <div class ="legendItem"><div class="dot" id="nounDot"></div> Noun </div>
                 <div class ="legendItem"><div class="dot" id="adjDot"></div> Adjective </div>
-                <div class ="legendItem"><div class="line" id="linkDot"></div> Link (1 connection) </div>
+                <div class ="legendItem"><div class="line" id="linkDot"></div> Edge (same thickness) </div>
             </div>
 
             <div id="networkGraphContainer">
